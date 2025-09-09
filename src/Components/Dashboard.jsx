@@ -19,7 +19,7 @@ const Dashboard = () => {
         <div className='flex'>
             <Navbar />
             <div>
-                <div className='flex justify-between items-center w-[1420px] border-y border-gray-300'>
+                <div className='flex justify-between items-center lg:w-[1300px] 2xl:w-[1420px] border-y border-gray-300'>
                     <div className='flex items-center gap-4'>
                         <img src={DashboardImg} alt='HexImg' />
                         <div className='text-lg font-bold'>Dashboard</div>
@@ -36,7 +36,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <div className='flex gap-4 justify-between items-center w-[1420px] p-4' >
+                <div className='flex gap-4 justify-between items-center lg:w-[1300px] 2xl:w-[1420px] p-4' >
                     <div className='border border-gray-300 rounded-md w-1/4 p-4'>
                         <div className='text-md text-gray-700'>Consolidated Revenue</div>
                         <div className='text-xl font-bold'>€24.5B</div>
@@ -71,12 +71,12 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <div className='flex gap-4 justify-between items-center w-[1420px] px-4'>
+                <div className='flex gap-4 justify-between items-center lg:w-[1300px] 2xl:w-[1420px] px-4'>
                     <LineChartGraph />
                     <Bargraph />
                 </div>
                 <div className='flex'>
-                    <div className=' w-[990px] border border-gray-300 mt-8 p-4 mx-4 rounded-md'>
+                    <div className='lg:w-[860px] 2xl:w-[990px] border border-gray-300 mt-8 p-4 mx-4 rounded-md'>
                         <div className='flex justify-between items-center w-full my-2'>
                             <div className='flex gap-2 items-center '>
                                 <img src={Entity} alt='img' />
@@ -117,7 +117,7 @@ const Dashboard = () => {
                         </table>
 
                     </div>
-                    <div className='w-[400px] bg-orange-50 border border-gray-300 mt-8 p-4 rounded-md'>
+                    <div className=' lg:w-[400px] 2xl:w-[400px] bg-orange-50 border border-gray-300 mt-8 p-4 rounded-md'>
                         <div >
                             <div className='flex justify-between items-center w-full my-2'>
                                 <div className='flex gap-2 items-center '>

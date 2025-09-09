@@ -32,7 +32,7 @@ const LineChartGraph = () => {
     <div className="w-[1200px] h-[300px] bg-white shadow-lg rounded-2xl">
       <div className="flex  gap-4">
         <img src={Revenue} alt="Revenue" className="w-6 h-6 mt-1" />
-        <h2 className="text-xl font-bold mb-4 text-left">Weekly Trends fd</h2>
+        <h2 className="text-xl font-bold mb-4 text-left">Revenue & Profit Trend</h2>
       </div>
       <ResponsiveContainer width="100%" height="80%">
         <LineChart data={data}>

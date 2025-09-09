@@ -57,7 +57,7 @@ const ListOfCompanies = () => {
         <div className='flex'>
             <Navbar />
             <div>
-                <div className='flex justify-between items-center w-[1420px] border-y border-gray-300'>
+                <div className='flex justify-between items-center lg:w-[1300px] 2xl:w-[1420px] border-y border-gray-300'>
                     <div className='flex items-center gap-4'>
                         <img src={DashboardImg} alt='HexImg' />
                         <div className='text-lg font-bold'>List of Companies</div>
@@ -74,7 +74,7 @@ const ListOfCompanies = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-between items-center w-[1420px] p-4'>
+                <div className='flex justify-between items-center lg:w-[1300px] 2xl:w-[1420px] p-4'>
                     <div className='flex items-center gap-4'>
                         <div className="relative w-full">
                             <img
@@ -107,7 +107,7 @@ const ListOfCompanies = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-between items-center w-[1420px]'>
+                <div className='flex justify-between items-center lg:w-[1300px] 2xl:w-[1420px]'>
                     <div></div>
                     <div className="flex items-center gap-2">
                         <span className="self-center">
