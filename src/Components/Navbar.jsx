@@ -7,7 +7,7 @@ import item4 from '../assets/item4.png';
 import item5 from '../assets/item5.png';
 import item6 from '../assets/item6.png';
 import blueIcon1 from '../assets/blueIcon1.png';
-import blueIcon2 from '../assets/blueIcon2.png';
+import blueIcon2 from '../assets/BlueIcon2.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
