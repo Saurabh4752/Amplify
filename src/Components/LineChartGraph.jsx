@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Dummy data with 2 values
+
 const data = [
   { day: "Jul 24", Revenue: 80, ProfitTrend: 20 },
   { day: "Aug 24", Revenue: 70, ProfitTrend: 25 },
@@ -32,13 +32,13 @@ const LineChartGraph = () => {
       <h2 className="text-xl font-bold mb-4 text-left">Weekly Trends fd</h2>
       <ResponsiveContainer width="100%" height="80%">
         <LineChart data={data}>
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+         
           <XAxis dataKey="day" />
           <YAxis />
           <Tooltip />
           <Legend />
 
-          {/* First Line */}
+       
           <Line
             type="monotone"
             dataKey="Revenue"
@@ -48,7 +48,6 @@ const LineChartGraph = () => {
             activeDot={{ r: 3, fill: "#1e40af" }}
           />
 
-          {/* Second Line */}
           <Line
             type="monotone"
             dataKey="ProfitTrend"

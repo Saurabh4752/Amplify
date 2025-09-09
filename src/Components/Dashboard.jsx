@@ -23,7 +23,7 @@ const Dashboard = () => {
                     <div className='flex items-center gap-4'>
                         <img src={DashboardImg} alt='HexImg' />
                         <div className='text-lg font-bold'>Dashboard</div>
-                        <select className='bg-white border border-gray-500 rounded-md text-xs text-gray-700'>
+                        <select className='bg-white border border-gray-300 rounded-md'>
                             <option>FY(2024-2025)</option>
                         </select>
                     </div>
