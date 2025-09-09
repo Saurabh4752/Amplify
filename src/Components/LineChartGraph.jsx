@@ -9,6 +9,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import Revenue from '../assets/Revenue.png';
 
 
 const data = [
@@ -29,18 +30,21 @@ const data = [
 const LineChartGraph = () => {
   return (
     <div className="w-[1200px] h-[300px] bg-white shadow-lg rounded-2xl">
-      <h2 className="text-xl font-bold mb-4 text-left">Weekly Trends fd</h2>
+      <div className="flex  gap-4">
+        <img src={Revenue} alt="Revenue" className="w-6 h-6 mt-1" />
+        <h2 className="text-xl font-bold mb-4 text-left">Weekly Trends fd</h2>
+      </div>
       <ResponsiveContainer width="100%" height="80%">
         <LineChart data={data}>
-         
+
           <XAxis dataKey="day" />
           <YAxis />
           <Tooltip />
           <Legend />
 
-       
+
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Revenue"
             stroke="#3b82f6"
             strokeWidth={1}
@@ -49,7 +53,7 @@ const LineChartGraph = () => {
           />
 
           <Line
-            type="monotone"
+            type="linear"
             dataKey="ProfitTrend"
             stroke="#f97316"
             strokeWidth={1}

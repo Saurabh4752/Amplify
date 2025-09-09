@@ -9,6 +9,7 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
+import Margin from '../assets/Margin.png';
 
 const data = [
     { day: "Jan", Revenue: 30, OpearatingExpense: 20, COGS: 10 },
@@ -23,7 +24,10 @@ const Bargraph = () => {
     return (
         <div className="flex gap-4">
             <div className="w-[380px] h-[300px]  bg-white shadow-lg rounded-2xl">
-                <h2 className="text-xl font-bold mb-4 text-left">Weekly Performance</h2>
+                <div className="flex  gap-4">
+                    <img src={Margin} alt="Margin" className="w-6 h-6 mt-1" />
+                    <h2 className="text-xl font-bold mb-4 text-left">Weekly Performance <span className="text-gray-400 text-xs">{`(Last Six Months)`}</span></h2>
+                </div>
                 <ResponsiveContainer width="100%" height="80%">
                     <BarChart data={data}>
                         <XAxis dataKey="day" />
